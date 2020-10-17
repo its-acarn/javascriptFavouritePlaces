@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js"></script>
+    <title>Favourite Places</title>
+</head>
+
+<body>
+    <header>
+        <h1>Where are your favourite places?</h1>
+    </header>
+    <section id="form-wrapper">
+        <form id="fave-place-form">
+            <label for="name" id='name'>Name:</label>
+            <input type="text" id='name'>
+
+            <label for="country" id='country'>Favourite country:</label>
+            <input type="text" id='country'>
+
+            <label for="city" id='city'>Favourite city/town:</label>
+            <input type="text" id='city'>
+
+            <label for="visited" id="visited">Visited:</label>
+
+            <input type="radio" value="yes" name="visited" id="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" value="no" name="visited" id="no" checked>
+            <label for="no">No</label>
+
+            <input type="submit" value="Add To List" id="add-to-list-button"></input>
+        </form>
+    </section>
+    <section id="list-wrapper">
+        <h1>Favourite Places:</h1>
+        <ul id="favourite-places-list"></ul>
+    </section>
+    <section>
+        <button id="delete-all-button">Delete All</button>
+    </section>
+</body>
+
+</html>
